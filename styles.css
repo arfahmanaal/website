@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.banner-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+.banner {
+    min-width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    position: absolute;
+    transition: opacity 1s ease;
+    opacity: 0;
+    border-style: dashed;
+}
+.banner banner1{
+    background: #000;
+}
+
+.banner.active {
+    opacity: 1;
+}
+
+#banner1 {
+    background: #007BFF; /* Blue */
+}
+
+#banner2 {
+    background: #28A745; /* Green */
+}
+
+#banner3 {
+    background: #FFC107; /* Yellow */
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.button-group {
+    display: flex;
+    margin-top: 10px;
+}
+
+.buy-button, .add-to-cart-button {
+    padding: 10px 15px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.buy-button {
+    background-color: #007BFF;
+    color: white;
+}
+
+.add-to-cart-button {
+    background-color: #28A745;
+    color: white;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+.add-to-cart-button:hover {
+    background-color: #218838;
+}
+
+.guest-book, .feedback, .contact-info, .related-links {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f5f5f5;
+    border-left: 1px solid #ddd;
+    padding: 10px;
+    width: 250px;
+    height: 100%;
+}

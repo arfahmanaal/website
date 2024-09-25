@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My E-Commerce Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="banner-container">
+    <div class="banner" id="banner1">Banner 1</div>
+    <div class="banner" id="banner2">Banner 2</div>
+    <div class="banner" id="banner3">Banner 3</div>
+  </div>
+
+  <div class="main-content">
+    <h2>Welcome to the Best Online Shopping Experience</h2>
+    <p>Browse through our wide range of products. Great deals are waiting for you!</p>
+
+    <div class="search-container">
+      <form action="#">
+        <input type="text" placeholder="Search for products...">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+          <option value="">Default Sorting</option>
+          <option value="">Sort by price</option>
+          <option value="">Sort by popularity</option>
+          <option value="">Sort by rating</option>
+          <option value="">Sort by sale</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="product-gallery">
+      <div class="product-item" onclick="location.href='product1.html'">
+        <img src="https://via.placeholder.com/300" alt="Product 1">
+        <h3><a href="products.html">Product 1</a></h3>
+        <div class="rating">★★★★☆</div>
+        <p>$25.00</p>
+        <div class="button-group">
+          <a href="#" class="buy-button">Buy Now</a>
+          <a href="#" class="add-to-cart-button">Add to Cart</a>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="https://via.placeholder.com/300" alt="Product 2">
+        <h3><a href="products.html">Product 2</a></h3>
+        <div class="rating">★★★☆☆</div>
+        <p>$30.00</p>
+        <div class="button-group">
+          <a href="#" class="buy-button">Buy Now</a>
+          <a href="#" class="add-to-cart-button">Add to Cart</a>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="https://via.placeholder.com/300" alt="Product 3">
+        <h3><a href="products.html">Product 3</a></h3>
+        <div class="rating">★★★★★</div>
+        <p>$40.00</p>
+        <div class="button-group">
+          <a href="#" class="buy-button">Buy Now</a>
+          <a href="#" class="add-to-cart-button">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="guest-book">
+      <h3>Guest Book</h3>
+      <form action="#">
+        <input type="text" placeholder="Your Name" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Sign Guest Book</button>
+      </form>
+    </div>
+
+    <div class="feedback">
+      <h3>Feedback</h3>
+      <form action="#">
+        <input type="text" placeholder="Your Name" required>
+        <textarea placeholder="Your Feedback" required></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p>Email: support@myecommerce.com</p>
+      <p>Phone: +1 (234) 567-890</p>
+    </div>
+    
+    <div class="related-links">
+      <h3>Related Links</h3>
+      <ul>
+        <li><a href="#">Shipping Information</a></li>
+        <li><a href="#">Returns & Exchanges</a></li>
+        <li><a href="#">Customer Support</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h3>Time Spent on Website</h3>
+    <p id="timeSpent">00:00:00</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 My E-Commerce Store | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    <p><a href="#">Guest Book</a> | <a href="#">Downloads</a> | <a href="#">Related Links</a></p>
+  </footer>
+  <script src="script.js"></script>
+
+
+</body>
+</html>
